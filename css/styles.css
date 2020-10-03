@@ -61,7 +61,10 @@ h5 {
 
 header {
     color: #fff;
-    background-color: yellowgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header a {
@@ -106,4 +109,57 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.hero {
+    min-height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #e71cb4;
+    border: 2px solid #e71cb4;
+    border-radius: 5px;
+    padding: 15px 45px;
+    display: inline-block;
+}
+
+.btn--lg {
+    font-size: 22px;
+    padding: 25px 80px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color: #e71cb4;
+    background-color: #fff;
+}
+
+.btn--transparent {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn--transparent:hover,
+.btn--transparent:focus,
+.btn--transparent:active {
+    color: #222;
 }
