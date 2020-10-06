@@ -11,9 +11,11 @@ a, button {
 a {
     text-decoration: none;
 }
+
 body {
     font: 400 22px 'Poppins', sans-serif;
-    color: #444;    
+    color: #444; 
+    line-height: 1.6;
 }
 
 .container {
@@ -23,12 +25,11 @@ body {
 }
 
 .box {
-    outline: 1px solid orange;
     padding: 90px 0;
 }
 
 .box--padding-lg {
-    padding: 140px 0;
+    padding: 90px 0;
 }
 
 .box--bg-pink {
@@ -61,10 +62,10 @@ h5 {
 
 header {
     color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: absolute;/*Запихать картинку под хедер*/
+    top: 0; /*Тоже пихаем*/
+    left: 0; /*Тоже пихаем*/
+    right: 0; /*Тоже пихаем*/
 }
 
 header a {
@@ -119,6 +120,10 @@ header .container{
     align-items: center;
     text-align: center;
     color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;/* Заролнит блок, не будет места без картинки*/
+    background-image: url(../img/hero.jpg);
 }
 
 .hero__title {
@@ -162,4 +167,12 @@ header .container{
 .btn--transparent:focus,
 .btn--transparent:active {
     color: #222;
+}
+
+.text-purple {
+    color: #e71cb4;
+}
+
+.text-lg {
+    font-size: 32px;
 }
