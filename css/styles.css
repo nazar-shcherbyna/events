@@ -5,7 +5,7 @@
 }
 
 a, button {
-    transition: all .3s ease-in-out 
+    transition: all .3s ease-in-out;
 }
 
 a {
@@ -367,4 +367,83 @@ header .container{
 
 .social i {
     margin: auto;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 70px;
+}
+
+.subscribe-form__input {
+    color: #888;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #fff;
+    padding: 15px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.subscribe-form__input:focus {
+    border-color: #e71cb4;
+}
+
+@media screen and (max-width:576px) {
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form__input {
+        margin: 0 0 10px;
+        max-width: none;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.contact-form__group {
+    margin: 20px 17px 40px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.contact-form__group--1-2 {
+    width: calc(50% - 17px * 2);
+}
+
+.contact-form__input,
+.contact-form__label {
+    display: block;
+    width: 100%;
+}
+
+.contact-form__input {
+    outline: none;
+    border: 0;
+    border-bottom: 4px solid #000;
+    padding: 15px 0;
+    transition: border-color .4s ease;
+}
+
+.contact-form__input:focus {
+    border-color: #fff;
+}
+
+.contact-form__label {
+    position: absolute;
+    padding: 15px 0;
+    transform: translate(0, -100%);
+    transition: all .4s ease;
+}
+
+.contact-form__input:focus + .contact-form__label {
+    transform: translate(0, 0);
 }
